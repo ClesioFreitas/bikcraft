@@ -8,12 +8,17 @@
   <title>Bikcraft - Bicicletas Elétricas</title>
   <meta name="description" content="Bicicletas elétricas da alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft">
 
-  <link rel="prelod" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="prelod" href="./css/style.min.css" as="style">
+  <link rel="stylesheet" href="./css/style.min.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 
 <body>
@@ -35,11 +40,11 @@
   <main class="introducao-bg">
     <div class="introducao container">
       <div class="introducao-conteudo">
-        <h1 class="font-1-xxl cor-0">Bicicletas feitas sob medidas<span class="cor-p1">.</span></h1>
-        <p class="font-2-l cor-5">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <a class="botao" href="./bicicletas.html">Escolha a sua</a>
+        <h1 class="font-1-xxl cor-0 fadeInDown" data-anime="200">Bicicletas feitas sob medidas<span class="cor-p1">.</span></h1>
+        <p class="font-2-l cor-5 fadeInDown" data-anime="400">Bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <a class="botao fadeInDown" data-anime="600" href="./bicicletas.html">Escolha a sua</a>
       </div>
-      <picture>
+      <picture data-anime="800" class="fadeInDown">
         <source media="(max-width: 800px)" srcset="./img/bicicletas/nimbus.jpg">
         <img src="./img/introducao/introducao.jpg" width="1280" height="1600" alt="Bicicleta elétrica preta">
       </picture>
@@ -59,14 +64,14 @@
       </li>
       <li>
         <a href="./bicicletas/nimbus.html">
-          <img src="./img/Bicicletas/nimbus-home.jpg"  width="920" height="1040" alt="Bicicleta preta">
+          <img src="./img/Bicicletas/nimbus-home.jpg" width="920" height="1040" alt="Bicicleta preta">
           <h3 class="font-1-xl">Nimbus Stark</h3>
           <span class="font-2-m cor-8">R& 4999</span>
         </a>
       </li>
       <li>
         <a href="./bicicletas/nebula.html">
-          <img src="./img/Bicicletas/nebula-home.jpg"  width="920" height="1040" alt="Bicicleta preta">
+          <img src="./img/Bicicletas/nebula-home.jpg" width="920" height="1040" alt="Bicicleta preta">
           <h3 class="font-1-xl">Nebula Cosmic</h3>
           <span class="font-2-m cor-8">R& 3999</span>
         </a>
@@ -112,7 +117,7 @@
       <li><img src="./img/parceiros/lescone.svg" width="208" height="41" alt="lescone"></li>
       <li><img src="./img/parceiros/flexblog.svg" width="165" height="38" alt="flexblog"></li>
       <li><img src="./img/parceiros/wildbeast.svg" width="194" height="34" alt="wildbeast"></li>
-      <li><img src="./img/parceiros/surfbot.svg"  width="200" height="49"alt="surfbot"></li>
+      <li><img src="./img/parceiros/surfbot.svg" width="200" height="49" alt="surfbot"></li>
     </ul>
   </section>
 
@@ -200,7 +205,8 @@
     </div>
   </footer>
 
-
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
